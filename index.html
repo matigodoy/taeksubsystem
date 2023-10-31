@@ -1,150 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taekwondo</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Taekwondo</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
-</head>
-
-<body class="hold-transition layout-top-nav">
-  <div class="wrapper">
-    <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
-      <div class="container">
-        <a href="index_admin.html" class="navbar-brand">
-          <img src="assets/img/World_Taekwondo.png" alt="Logo" class="brand-image"
-            style="opacity: .8"/>
-          <span class="brand-text font-weight-light">Subsistema taekwondo</span>
-        </a>
-
-        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
-          <!-- Left navbar links -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="index_admin.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="sabonim/administrar_taekwondistas.html" class="nav-link">Taekwondistas</a>
-            </li>
-            <li class="nav-item">
-              <a href="administrar_dojangs.html" class="nav-link">Dojangs</a>
-            </li>
-            <li class="nav-item">
-              <a href="administrar_solicitudes.html" class="nav-link">Solicitudes</a>
-            </li>
-          </ul>
-
-          <!-- Right navbar links -->
-          <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-            <!-- Notifications Dropdown Menu -->
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-toggle="dropdown" href="#">
-                <i class="far fa-user"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <div class="dropdown-divider"></div>
-                <a href="login.html" class="dropdown-item">
-                  <i class="fas fa-user-minus mr-2"></i> Log Out
-                </a>
-            </li>
-            </li>
-          </ul>
-        </div>
-    </nav>
-    <!-- /.navbar -->
-
-    <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Bienvenido</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Bienvenida</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../../plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- icheck bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
+  </head>
+  <body class="hold-transition login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <a href="index.html"><b>Tae</b>kwondo</a>
+      </div>
+      <!-- /.login-logo -->
       <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Mensaje importante</h3>
+        <div class="card-body login-card-body">
+          <p class="login-box-msg">Inicia sesión con tus credenciales</p>
 
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Email" />
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-envelope"></span>
+                </div>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Contraseña"
+              />
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-lock"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <div class="icheck-primary">
+                  <input type="checkbox" id="remember" />
+                  <label for="remember"> Recordarme </label>
+                </div>
+              </div>
+              <!-- /.col -->
+              <div class="col-4">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Entrar
+                </button>
+              </div>
+              <!-- /.col -->
+            </div>
+          </form>
+
+          <div class="social-auth-links text-center mb-3">
+            <p>ó</p>
+            <a href="#" class="btn btn-block btn-primary">
+              <i class="fab fa-facebook mr-2"></i> Entrar con Facebook
+            </a>
+            <a href="#" class="btn btn-block btn-danger">
+              <i class="fab fa-google-plus mr-2"></i> Entrar con Google+
+            </a>
           </div>
+          <!-- /.social-auth-links -->
+
+          <p class="mb-1">
+            <a href="forgot-password.html">Olvidé mi contraseña</a>
+          </p>
+          <p class="mb-0">
+            <a href="register.html" class="text-center">Registrarme</a>
+          </p>
         </div>
-        <div class="card-body">
-          Para empezar a utilizar el sistema, debe iniciar sesión con su usuario y contraseña.  
-        </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-          <a href="login.html" class="btn btn-primary">Iniciar sesión</a>
-        </div>
-        <!-- /.card-footer-->
+        <!-- /.login-card-body -->
       </div>
-      <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
 
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
-
-    <!-- Main Footer -->
-    <footer class="main-footer">
-      <!-- To the right -->
-      <div class="float-right d-none d-sm-inline">
-        Ingenieria de Software I
-      </div>
-      <!-- Default to the left -->
-      <strong>Copyright &copy; 2023 <a href="https://ubp.edu.ar">UBP</a>.</strong> Derechos reservados.
-    </footer>
-  </div>
-  <!-- ./wrapper -->
-
-  <!-- REQUIRED SCRIPTS -->
-
-  <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.min.js"></script>
-</body>
-
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+  </body>
 </html>
+<script>
+  // Método que valida si email o contraseña es admin/admin para redireccionar a index.html
+  $(document).ready(function () {
+    $("form").submit(function (e) {
+      e.preventDefault();
+      var email = $("input[type=email]").val();
+      var password = $("input[type=password]").val();
+      if (email == "sabonim@tae.com" && password == "sabonim") {
+        window.location.href = "sabonim/index_sabonim.html";
+      } else if (email == "practicante@tae.com" && password == "practicante") {
+        window.location.href = "practicante/index_practicante.html";
+      } else {
+        alert("Usuario o contraseña incorrectos");
+      }
+    });
+  });
+</script>
