@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrarme</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- icheck bootstrap -->
+    <link
+      rel="stylesheet"
+      href="plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+  </head>
+  <body class="hold-transition register-page">
+    <div class="register-box">
+      <div class="register-logo">
+        <a href="#"><b>Tae</b>kwondo</a>
+      </div>
+
+      <div class="card">
+        <div class="card-body register-card-body">
+          <p class="login-box-msg">Crear cuenta</p>
+          <form>
+            <div class="card-body">
+                <div class="form-group">
+                  <label>Nombre</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group ">
+                  <label>Apellido</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su apellido">
+                </div>
+              <div class="row">
+                <div class="form-group col-4">
+                  <label>DNI</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su DNI">
+                </div>
+                <div class="form-group col-4">
+                  <label for="exampleInputEmail1">Peso (kg)</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su Peso">
+                </div>
+                <div class="form-group col-4">
+                  <label>Altura (cm)</label>
+                  <input type="number" class="form-control" placeholder="Ingrese su Altura">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label>Nacimiento</label>
+                  <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"
+                      control-id="ControlID-4" placeholder="dd/mm/yyyy" />
+                    <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                      <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-6">
+                  <label>Nacionalidad</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su Nacionalidad">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Foto</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-camera"></i></span>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="exampleInputFile" control-id="ControlID-3">
+                    <label class="custom-file-label">Seleccione su foto</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Número de Teléfono</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                  </div>
+                  <input type="text" class="form-control"
+                    data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" inputmode="text"
+                    control-id="ControlID-25" placeholder="(___) ___-____">
+                </div>
+              </div>
+              <div>
+                <label>Contacto de Emergencia:</label>
+                    <div class="form-group">
+                      <label>Nombre</label>
+                      <input type="text" class="form-control" placeholder="Nombre del Contacto de Emergencia">
+                    </div>
+                    <div class="form-group">
+                      <label>Teléfono</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        </div>
+                        <input type="text" class="form-control"
+                          data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask=""
+                          inputmode="text" control-id="ControlID-25" placeholder="(___) ___-____">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Relacion</label>
+                      <input type="text" class="form-control" placeholder="Relacion con el Contacto de Emergencia">
+                    </div>
+              </div>
+              <div>
+                <label>Credenciales:</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Correo electrónico"
+                  />
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-envelope"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Contraseña"
+                  />
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-lock"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Confirma contraseña"
+                  />
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-lock"></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="icheck-primary">
+                  <input
+                    type="checkbox"
+                    id="agreeTerms"
+                    name="terms"
+                    value="agree"
+                  />
+                  <label for="agreeTerms">
+                    Estoy de acuerdo con los <a href="#">términos</a>
+                  </label>
+                </div>
+              </div>
+              <!-- /.col -->
+              <div class="col-6">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Registrarme
+                </button>
+              </div>
+              <!-- /.col -->
+            </div>
+          </form>
+          <a href="index.html" class="text-center">Ya soy usuario</a>
+        </div>
+        <!-- /.form-box -->
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.register-box -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+  </body>
+</html>
+<script>
+  // Método que valida si email o contraseña es admin/admin para redireccionar a index.html
+  $(document).ready(function () {
+    $("form").submit(function (e) {
+      e.preventDefault();
+
+        
+      alert("Se ha solicitado crear la cuenta, un usuario administrador deberá aprobarla y serás notificado por correo electrónico.");
+      window.location.href = "index.html";
+        });
+  });
+</script>
+
