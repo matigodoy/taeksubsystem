@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Top Navigation</title>
+  <title>Taekwondo</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -21,9 +21,9 @@
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
       <div class="container">
         <a href="index_admin.html" class="navbar-brand">
-          <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-            style="opacity: .8">
-          <span class="brand-text font-weight-light">AdminLTE 3</span>
+          <img src="assets/img/World_Taekwondo.png" alt="Logo" class="brand-image"
+            style="opacity: .8"/>
+          <span class="brand-text font-weight-light">Subsistema taekwondo</span>
         </a>
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -38,7 +38,7 @@
               <a href="index_admin.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="administrar_taekwondistas.html" class="nav-link">Taekwondistas</a>
+              <a href="sabonim/administrar_taekwondistas.html" class="nav-link">Taekwondistas</a>
             </li>
             <li class="nav-item">
               <a href="administrar_dojangs.html" class="nav-link">Dojangs</a>
@@ -68,17 +68,56 @@
     <!-- /.navbar -->
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <div class="content-header">
-        <div class="container">
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Bienvenido</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item active">Bienvenida</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
 
-          <H1>TODO EL CONTENDIO  QUE UNO QUIERE MOSTRAR ACA</H1>
+    <!-- Main content -->
+    <section class="content">
 
-        </div><!-- /.container-fluid -->
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Mensaje importante</h3>
+
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body">
+          Para empezar a utilizar el sistema, debe iniciar sesión con su usuario y contraseña.  
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+          <a href="login.html" class="btn btn-primary">Iniciar sesión</a>
+        </div>
+        <!-- /.card-footer-->
       </div>
-    </div>
-    <!-- /.content-wrapper -->
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
