@@ -69,7 +69,7 @@
           <!-- Left navbar links -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index_sabonim.html" class="nav-link">Inicio</a>
+              <a href="index_admin.html" class="nav-link">Inicio</a>
             </li>
           </ul>
 
@@ -100,87 +100,158 @@
           <div class="col-md-12 mx-auto">
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">EDITAR DOJANG</h3>
+                <h3 class="card-title">FORMULARIO INSTRUCTOR</h3>
               </div>
               <form>
                 <div class="card-body">
+                  <div class="row">
+                    <div class="form-group col-6">
+                      <label>Nombre</label>
+                      <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group col-6">
+                      <label>Apellido</label>
+                      <input type="text" class="form-control" placeholder="Ingrese su apellido">
+                    </div>
+                  </div>
                   <div class="form-group">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" placeholder="Ingrese el nombre"
-                      value="Dojang del Poder absoluto">
+                    <label>Correo electronico</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su correo electronico">
+                  </div>
+                  <div class="form-group">
+                    <label>Certificado</label>
+                    <input type="number" class="form-control" placeholder="Ingrese su numero de certificado">
                   </div>
                   <div class="row">
                     <div class="form-group col-4">
-                      <label>Ciudad</label>
-                      <input type="text" class="form-control" placeholder="Ingrese la ciudad" value="Cordoba">
+                      <label>DNI</label>
+                      <input type="text" class="form-control" placeholder="Ingrese su DNI">
                     </div>
                     <div class="form-group col-4">
-                      <label>Calle</label>
-                      <input type="text" class="form-control" placeholder="Ingrese la calle" value="Av. Colon">
+                      <label for="exampleInputEmail1">Peso (kg)</label>
+                      <input type="text" class="form-control" placeholder="Ingrese su Peso">
                     </div>
                     <div class="form-group col-4">
-                      <label>Altura</label>
-                      <input type="number" class="form-control" placeholder="Ingrese la altura" value="543">
+                      <label>Altura (cm)</label>
+                      <input type="number" class="form-control" placeholder="Ingrese su Altura">
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="form-group col-4">
+                      <label>Fecha de Nacimiento</label>
+                      <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"
+                          control-id="ControlID-4" placeholder="dd/mm/yyyy" />
+                        <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-4">
+                      <label>Nacionalidad</label>
+                      <input type="text" class="form-control" placeholder="Ingrese su Nacionalidad">
+                    </div>
+                    <div class="form-group col-4">
+                      <label>Genero</label>
+                      <select class="form-control" control-id="ControlID-24">
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                      <option>Sin especificar</option>
+                      </select>
+                      </div>
+                  </div>
                   <div class="form-group">
-                    <label>Dias</label>
-                    <select class="select2" multiple="multiple" data-placeholder="Selecciona los dias"
-                      style="width: 100%;" value="Lunes">
-                      <option selected="selected">Lunes</option>
-                      <option selected="selected">Martes</option>
-                      <option selected="selected">Miercoles</option>
-                      <option selected="selected">Jueves</option>
-                      <option selected="selected">Viernes</option>
-                      <option>Sabado</option>
-                      <option>Domingo</option>
+                    <label>Categoria</label>
+                    <select class="form-control select2" style="width: 100%;">
+                      <option disabled selected>Seleccione el color del cinto</option>
+                      <option>Blanco</option>
+                      <option>Blanco punta Amarilla</option>
+                      <option>Amarillo</option>
+                      <option>Amarillo punta Verde</option>
+                      <option>Verde</option>
+                      <option>Verde punta Azul</option>
+                      <option>Azul</option>
+                      <option>Azul punta Roja</option>
+                      <option>Roja</option>
+                      <option>Roja punta Negra</option>
+                      <option>Negro I</option>
+                      <option>Negro II</option>
+                      <option>Negro III</option>
+                      <option>Negro IV</option>
+                      <option>Negro V</option>
+                      <option>Negro VI</option>
+                      <option>Negro VII</option>
+                      <option>Negro VIII</option>
+                      <option>Negro IX</option>
                     </select>
                   </div>
-
-                  <div class="row">
-                    <div class="form-group col-6">
-                      <label>Horario inicio</label>
-                      <div class="input-group date" id="timepicker" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#timepicker"
-                          control-id="ControlID-28" placeholder="__:__" value="10:00">
-                        <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
-                          <div class="input-group-text"><i class="far fa-clock"></i></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group col-6">
-                      <label>Horario fin</label>
-                      <div class="input-group date" id="timepicker" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#timepicker"
-                          control-id="ControlID-28" placeholder="__:__" value="20:00">
-                        <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
-                          <div class="input-group-text"><i class="far fa-clock"></i></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                   <div class="form-group">
-                    <label>Precio</label>
+                    <label>Foto</label>
                     <div class="input-group">
                       <div class="input-group-prepend">
-                        <span class="input-group-text">$</span>
+                        <span class="input-group-text"><i class="fas fa-camera"></i></span>
                       </div>
-                      <input type="text" class="form-control" control-id="ControlID-59" placeholder="Ingrese el precio"
-                        value="12000">
-                      <div class="input-group-append">
-                        <span class="input-group-text">.00</span>
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" control-id="ControlID-3">
+                        <label class="custom-file-label">Seleccione su foto</label>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label>Restricciones</label>
-                    <textarea class="form-control" rows="2" placeholder="Ingrese las restricciones ...">Mayores de 18 años</textarea>
+                    <label>Número de Teléfono</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                      </div>
+                      <input type="text" class="form-control"
+                        data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" inputmode="text"
+                        control-id="ControlID-25" placeholder="(___) ___-____">
+                    </div>
+                  </div>
+                  <div>
+                    <label>Contacto de Emergencia:</label>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="form-group col-4">
+                          <label>Nombre</label>
+                          <input type="text" class="form-control" placeholder="Nombre del Contacto de Emergencia">
+                        </div>
+                        <div class="form-group col-4">
+                          <label>Teléfono</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            </div>
+                            <input type="text" class="form-control"
+                              data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask=""
+                              inputmode="text" control-id="ControlID-25" placeholder="(___) ___-____">
+                          </div>
+                        </div>
+                        <div class="form-group col-4">
+                          <label>Relacion</label>
+                          <input type="text" class="form-control" placeholder="Relacion con el Contacto de Emergencia">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Dojang</label>
+                    <select class="form-control select2" style="width: 100%;">
+                      <option disabled selected>Seleccione el dojang a cargo</option>
+                      <option>Dojang el poder cordobe</option>
+                      <option>Dojang el poder cordobe</option>
+                      <option>Dojang el poder cordobe</option>
+                      <option>Dojang el poder cordobe</option>
+                      <option>Dojang el poder cordobe</option>
+                      <option>Dojang el poder cordobe</option>
+                      <option>Dojang el poder cordobe</option>
+                      <option>Dojang el poder cordobe</option>
+                    </select>
                   </div>
 
                   <div class="card-footer">
                     <button type="submit" class="btn btn-default" control-id="ControlID-10">Cancelar</button>
-                    <button type="submit" class="btn btn-success float-right" control-id="ControlID-9">Solicitar</button>
+                    <button type="submit" class="btn btn-primary float-right" control-id="ControlID-9">Guardar</button>
                   </div>
               </form>
             </div>

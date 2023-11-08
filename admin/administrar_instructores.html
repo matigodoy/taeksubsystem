@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taekwondo</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="../plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="../plugins/toastr/toastr.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition layout-top-nav">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="../assets/img/World_Taekwondo.png" alt="Logo" class="brand-image"
+            style="opacity: .8"/>
+          <span class="brand-text font-weight-light">Subsistema taekwondo</span>
+        </a>
+
+        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+          <!-- Left navbar links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index_admin.html" class="nav-link">Inicio</a>
+            </li>
+          </ul>
+
+          <!-- Right navbar links -->
+          <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-user"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <div class="dropdown-divider"></div>
+                <a href="../index.html" class="dropdown-item">
+                  <i class="fas fa-user-minus mr-2"></i> Cerrar sesión
+                </a>
+            </li>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mx-auto">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">LISTA DE INSTRUCTORES</h3>
+                  <div class="card-tools">
+                    <div class="row">
+                      <div class="input-group input-group" style="width: 300px;">
+                        <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar">
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="ml-3">
+                        <a href="agregar_instructor.html" class="btn btn-success float-right"><i
+                            class="fas fa-plus"></i>
+                          Agregar</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0">
+                  <table class="table table-hover text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>Foto</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="../dist/img/user2-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Federico</td>
+                        <td class="align-middle">Marquez</td>
+                        <td class="align-middle">36218346743</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="../dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Matias</td>
+                        <td class="align-middle">Godoy cabrera</td>
+                        <td class="align-middle">123432123</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="../dist/img/user3-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Marcos</td>
+                        <td class="align-middle">Faletto</td>
+                        <td class="align-middle">3441233254</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="../dist/img/user4-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Lucia</td>
+                        <td class="align-middle">Oliva</td>
+                        <td class="align-middle">453234443</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="../dist/img/user5-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Ignacio</td>
+                        <td class="align-middle">Iriarte</td>
+                        <td class="align-middle">36218346743</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="../dist/img/user6-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Federico</td>
+                        <td class="align-middle">Marquez</td>
+                        <td class="align-middle">36218346743</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="../dist/img/user7-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Federico</td>
+                        <td class="align-middle">Marquez</td>
+                        <td class="align-middle">36218346743</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="../dist/img/user8-128x128.jpg" alt="user-avatar" class="img-circle img-fluid"></td>
+                        <td class="align-middle">Federico</td>
+                        <td class="align-middle">Marquez</td>
+                        <td class="align-middle">36218346743</td>
+                        <td class="text-right py-0 align-middle">
+                          <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-eye"></i></button>
+                            <a href="editar_instructor.html" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                            <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger"><i
+                                class="fas fa-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+
+                <!-- Modal Ver taekwondista-->
+                <div class="modal fade" id="modal-lg">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Informacion Instructor</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-6">
+                            <img src="../dist/img/user8-128x128.jpg" alt="user-avatar" class="img-circle img-fluid ml-5">
+                            <br><br><br>
+                            <h6><b>Contacto Emergencia: </b></h6>
+                            <h6>• <b>Nombre: </b>Alicia Cabrera</h6>
+                            <h6>• <b>Telefono: </b>(351) 725-5025</h6>
+                            <h6>• <b>Relacion: </b>Madre</h6>
+                            <br><br>
+                            <p><b>Dojang a cargo: </b>Dojang a todo poder cordobe</p>
+                          </div>
+                          <div class="col-6">
+                            <p><b>Nombre: </b>Lucas Matias</p>
+                            <p><b>Apellido: </b>Godoy</p>
+                            <p><b>Email: </b>matiasgodoy@hotmail.com</p>
+                            <p><b>DNI: </b>46629934</p>
+                            <p><b>Num. Certificado: </b>462372893</p>
+                            <p><b>Peso: </b>73.6 kg</p>
+                            <p><b>Altura: </b>176 cm</p>
+                            <p><b>Genero: </b>Masculino</p>
+                            <p><b>Fecha Nacimiento: </b>11/08/2000</p>
+                            <p><b>Categoria: </b>Cinturon Verde</p>
+                            <p><b>Nacionalidad: </b>Argentina</p>
+                            <p><b>Telefono: </b>(351) 362-4961</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer justify-content-left">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- Modal Eliminar -->
+                <div class="modal fade" id="modal-danger">
+                  <div class="modal-dialog">
+                    <div class="modal-content bg-danger">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Eliminar Instructor</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Estas seguro que desea eliminar este Instructor? &hellip;</p>
+                      </div>
+                      <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Si</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.modal -->
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Ingenieria de Software I
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2023 <a href="https://ubp.edu.ar">UBP</a>.</strong> Derechos reservados.
+  </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+</body>
+
+</html>
